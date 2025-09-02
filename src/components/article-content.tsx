@@ -2,6 +2,17 @@ import { Card } from "@/components/ui/card";
 import { BannerAd, SidebarAd, InArticleAd } from "@/components/ad-placements";
 import omamoricollection from "@/assets/omamori-collection.jpg";
 import templeInterior from "@/assets/temple-interior.jpg";
+import blessingRitual from "@/assets/blessing-ritual.jpg";
+import animeOmamori from "@/assets/anime-omamori.jpg";
+import sanrioOmamori from "@/assets/sanrio-omamori.jpg";
+import fujiOmamori from "@/assets/fuji-omamori.jpg";
+import academicOmamori from "@/assets/academic-omamori.jpg";
+import loveOmamori from "@/assets/love-omamori.jpg";
+import businessOmamori from "@/assets/business-omamori.jpg";
+import travelOmamori from "@/assets/travel-omamori.jpg";
+import healthOmamori from "@/assets/health-omamori.jpg";
+import kiyomizuTemple from "@/assets/kiyomizu-temple.jpg";
+import sensojiTemple from "@/assets/sensoji-temple.jpg";
 
 const ArticleContent = () => {
   return (
@@ -17,10 +28,10 @@ const ArticleContent = () => {
               {/* Introduction */}
               <div className="text-lg leading-relaxed text-foreground/90">
                 <p>
-                  Visiting Japanese shrines is a must-do experience for many travelers to Japan. Beyond the spiritual significance, many visitors are drawn to the unique and beautiful omamori (お守り) or protective charms that each shrine offers. These small tokens combine traditional craftsmanship with modern design, creating collectible items that serve as meaningful souvenirs.
+                  Japanese shrines offer more than spiritual solace—they provide unique omamori (お守り) charms that blend ancient traditions with modern designs. From anime collaborations to character-themed pieces, these protective talismans have evolved into collectible cultural artifacts that tell stories of Japan's rich heritage and contemporary creativity.
                 </p>
                 <p className="mt-4">
-                  From anime-themed designs like Demon Slayer to character collaborations with Sanrio, and iconic symbols like Mount Fuji, today's omamori showcase an incredible variety of artistic styles while maintaining their sacred purpose.
+                  Whether you're seeking academic success, love fortune, or simply want to bring home a piece of Japanese spirituality, this comprehensive guide will help you discover the most fascinating omamori designs across Japan's most revered shrines.
                 </p>
               </div>
 
@@ -28,97 +39,397 @@ const ArticleContent = () => {
               <Card className="overflow-hidden">
                 <img 
                   src={omamoricollection}
-                  alt="Collection of colorful Japanese omamori charms"
+                  alt="Collection of colorful Japanese omamori charms displaying various traditional and modern designs"
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-4">
                   <p className="text-sm text-muted-foreground">
-                    A beautiful collection of traditional omamori featuring various designs and purposes
+                    A stunning collection of traditional and modern omamori showcasing the artistic diversity of Japanese protective charms
                   </p>
                 </div>
               </Card>
 
-              {/* Article Sections */}
+              {/* Section 1: The Sacred Origins of Omamori */}
               <section>
-                <h2 className="text-2xl font-bold mb-4 heading-gradient">What Makes Omamori Special?</h2>
+                <h2 className="text-2xl font-bold mb-4 heading-gradient">The Sacred Origins of Omamori</h2>
                 <p className="text-foreground/90 mb-4">
-                  Omamori are more than just decorative items. Each charm is blessed by shrine priests and contains prayers written on paper or wood, sealed inside a beautifully crafted fabric pouch. Traditional purposes include:
+                  Omamori have protected the Japanese people for over a millennium, with roots tracing back to the Heian period (794-1185). These sacred amulets contain prayers or sutras written on paper or wood, blessed by shrine priests, and carefully sealed within beautiful fabric pouches.
                 </p>
-                <ul className="list-disc list-inside space-y-2 text-foreground/90 ml-4">
-                  <li><strong>Academic Success</strong> - Popular among students before exams</li>
-                  <li><strong>Health and Safety</strong> - Protection from illness and accidents</li>
-                  <li><strong>Love and Relationships</strong> - Bringing good fortune in romance</li>
-                  <li><strong>Business Success</strong> - Prosperity in work and finances</li>
-                  <li><strong>Travel Safety</strong> - Protection during journeys</li>
-                </ul>
+                <p className="text-foreground/90">
+                  The word "omamori" literally means "to protect," and each charm is believed to hold the spiritual power of the deity (kami) from the shrine where it was blessed. Traditional colors like red, white, and gold carry specific meanings—red for protection against evil, white for purification, and gold for prosperity.
+                </p>
+                
+                <Card className="overflow-hidden mt-6">
+                  <img 
+                    src={blessingRitual}
+                    alt="Traditional Japanese shrine maiden performing omamori blessing ritual with sacred charms"
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">
+                      A shrine maiden (miko) performing the traditional blessing ritual for omamori charms
+                    </p>
+                  </div>
+                </Card>
               </section>
 
+              {/* Section 2: Anime-Themed Omamori */}
               <section>
-                <h2 className="text-2xl font-bold mb-4 heading-gradient">Popular Modern Designs</h2>
-                <div className="grid md:grid-cols-2 gap-6 mb-6">
-                  <Card className="p-6">
-                    <h3 className="font-semibold text-lg mb-3 text-primary">Anime Collaborations</h3>
-                    <p className="text-foreground/90">
-                      Many shrines now offer omamori featuring popular anime characters, with Demon Slayer (Kimetsu no Yaiba) being particularly popular at certain temples.
+                <h2 className="text-2xl font-bold mb-4 heading-gradient">Anime-Themed Omamori: Modern Pop Culture Meets Ancient Tradition</h2>
+                <p className="text-foreground/90 mb-4">
+                  The fusion of traditional spirituality with modern anime culture has created some of the most sought-after omamori in Japan. Demon Slayer (Kimetsu no Yaiba) themed charms have become particularly popular, with designs featuring the distinctive patterns and colors of the anime's main characters.
+                </p>
+                <p className="text-foreground/90">
+                  These anime omamori maintain their sacred purpose while appealing to younger generations and international fans. Popular designs include Tanjiro's checkered pattern for perseverance, Nezuko's bamboo motif for protection, and the Water Breathing technique symbols for strength and flow.
+                </p>
+                
+                <Card className="overflow-hidden mt-6">
+                  <img 
+                    src={animeOmamori}
+                    alt="Colorful anime-themed omamori featuring Demon Slayer character designs and motifs"
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">
+                      Anime-inspired omamori featuring popular Demon Slayer designs that blend traditional craftsmanship with modern pop culture
                     </p>
-                  </Card>
-                  <Card className="p-6">
-                    <h3 className="font-semibold text-lg mb-3 text-primary">Character Themes</h3>
-                    <p className="text-foreground/90">
-                      Sanrio characters like Hello Kitty and My Melody have been incorporated into traditional designs, appealing to both children and adults.
+                  </div>
+                </Card>
+              </section>
+
+              {/* Section 3: Sanrio Character Omamori */}
+              <section>
+                <h2 className="text-2xl font-bold mb-4 heading-gradient">Sanrio Character Omamori: Kawaii Culture in Sacred Form</h2>
+                <p className="text-foreground/90 mb-4">
+                  Sanrio characters like Hello Kitty, My Melody, and Kuromi have found their way into traditional Japanese spirituality through specially designed omamori. These collaborations represent the unique Japanese ability to blend the sacred with the cute (kawaii).
+                </p>
+                <p className="text-foreground/90">
+                  Character omamori often focus on specific benefits—Hello Kitty for friendship and love, My Melody for sweet dreams and happiness, and Cinnamoroll for good luck and success. These designs appeal to both children and adults who grew up with these beloved characters.
+                </p>
+                
+                <Card className="overflow-hidden mt-6">
+                  <img 
+                    src={sanrioOmamori}
+                    alt="Cute Sanrio character themed omamori charms featuring Hello Kitty and other kawaii designs"
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">
+                      Adorable Sanrio character omamori that combine traditional Japanese spirituality with beloved kawaii culture
                     </p>
-                  </Card>
-                </div>
+                  </div>
+                </Card>
               </section>
 
               {/* In-Article Ad */}
               <InArticleAd />
 
+              {/* Section 4: Mount Fuji Omamori */}
+              <section>
+                <h2 className="text-2xl font-bold mb-4 heading-gradient">Mount Fuji Omamori: Sacred Mountain Protection</h2>
+                <p className="text-foreground/90 mb-4">
+                  Mount Fuji, Japan's most sacred mountain, inspires some of the most beautiful omamori designs. These charms often feature the mountain's iconic silhouette in various artistic interpretations, from traditional woodblock print styles to modern minimalist designs.
+                </p>
+                <p className="text-foreground/90">
+                  Fuji-themed omamori are particularly popular for protection during travel, achievement of goals, and overcoming challenges. The mountain's spiritual significance as a symbol of perseverance and reaching new heights makes these charms especially meaningful for those facing personal or professional challenges.
+                </p>
+                
+                <Card className="overflow-hidden mt-6">
+                  <img 
+                    src={fujiOmamori}
+                    alt="Mount Fuji themed omamori charms featuring the sacred mountain's silhouette in traditional designs"
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">
+                      Mount Fuji themed omamori showcasing the sacred mountain's spiritual power and artistic beauty
+                    </p>
+                  </div>
+                </Card>
+              </section>
+
+              {/* Section 5: Academic Success Omamori */}
+              <section>
+                <h2 className="text-2xl font-bold mb-4 heading-gradient">Academic Success Omamori: The Student's Guardian</h2>
+                <p className="text-foreground/90 mb-4">
+                  Academic success omamori (gakugyō-jōju) are among the most popular types, especially during examination seasons. These charms often feature scholarly symbols like owls (wisdom), bamboo (growth and flexibility), and calligraphy brushes (learning and knowledge).
+                </p>
+                <p className="text-foreground/90">
+                  The most famous academic omamori come from Kitano Tenmangu shrines, dedicated to Sugawara no Michizane, the deity of learning. Students across Japan visit these shrines before important exams, seeking divine assistance for their academic endeavors.
+                </p>
+                
+                <Card className="overflow-hidden mt-6">
+                  <img 
+                    src={academicOmamori}
+                    alt="Academic success omamori designed for students featuring scholarly symbols and educational motifs"
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">
+                      Academic success omamori featuring traditional symbols of learning and wisdom for student protection
+                    </p>
+                  </div>
+                </Card>
+              </section>
+
+              {/* Section 6: Love and Relationship Omamori */}
+              <section>
+                <h2 className="text-2xl font-bold mb-4 heading-gradient">Love and Relationship Omamori: Matters of the Heart</h2>
+                <p className="text-foreground/90 mb-4">
+                  Love omamori (en-musubi) are designed to attract romantic relationships, strengthen existing bonds, or help find one's soulmate. These charms typically feature soft colors like pink, red, and white, often adorned with hearts, cherry blossoms, or paired symbols representing unity.
+                </p>
+                <p className="text-foreground/90">
+                  Some love omamori are designed to be shared between couples, with matching designs that complete each other when brought together. Popular motifs include intertwined strings (representing the red thread of fate), paired animals, and traditional symbols of harmony and partnership.
+                </p>
+                
+                <Card className="overflow-hidden mt-6">
+                  <img 
+                    src={loveOmamori}
+                    alt="Love and relationship omamori charms in pink and red colors with romantic heart symbols"
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">
+                      Romantic love omamori designed to attract relationships and strengthen bonds between couples
+                    </p>
+                  </div>
+                </Card>
+              </section>
+
+              {/* Section 7: Business Success Omamori */}
+              <section>
+                <h2 className="text-2xl font-bold mb-4 heading-gradient">Business Success Omamori: Prosperity and Career Growth</h2>
+                <p className="text-foreground/90 mb-4">
+                  Business success omamori (shōbai-hanjō) focus on career advancement, financial prosperity, and entrepreneurial success. These charms often incorporate gold elements, traditional prosperity symbols like coins or treasure ships, and powerful kanji characters representing wealth and success.
+                </p>
+                <p className="text-foreground/90">
+                  Many business professionals keep these omamori in their briefcases, offices, or shops. The designs often feature the seven lucky gods (shichifukujin), especially Ebisu (patron of business) and Daikokuten (god of wealth), making them powerful symbols of commercial success.
+                </p>
+                
+                <Card className="overflow-hidden mt-6">
+                  <img 
+                    src={businessOmamori}
+                    alt="Business success omamori with gold and green colors featuring prosperity symbols for career growth"
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">
+                      Business prosperity omamori designed to attract wealth, career success, and entrepreneurial fortune
+                    </p>
+                  </div>
+                </Card>
+              </section>
+
+              {/* Section 8: Travel Safety Omamori */}
+              <section>
+                <h2 className="text-2xl font-bold mb-4 heading-gradient">Travel Safety Omamori: Protection on the Journey</h2>
+                <p className="text-foreground/90 mb-4">
+                  Travel safety omamori (kōtsū-anzen) are essential companions for anyone embarking on journeys, whether daily commutes or international adventures. These charms often feature transportation symbols like airplanes, ships, cars, or traditional travel motifs.
+                </p>
+                <p className="text-foreground/90">
+                  Modern travel omamori have adapted to include protection for air travel, with designs featuring wings, clouds, and aviation symbols. Many international travelers consider these charms essential accessories, believing they provide divine protection throughout their journeys.
+                </p>
+                
+                <Card className="overflow-hidden mt-6">
+                  <img 
+                    src={travelOmamori}
+                    alt="Travel safety omamori charms featuring airplane and road symbols for journey protection"
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">
+                      Travel protection omamori designed to ensure safe journeys and protect travelers during their adventures
+                    </p>
+                  </div>
+                </Card>
+              </section>
+
+              {/* Section 9: Health and Wellness Omamori */}
+              <section>
+                <h2 className="text-2xl font-bold mb-4 heading-gradient">Health and Wellness Omamori: Physical and Spiritual Well-being</h2>
+                <p className="text-foreground/90 mb-4">
+                  Health omamori (kenk-anzen) focus on maintaining physical health, recovery from illness, and overall well-being. These charms often incorporate healing symbols like medicinal herbs, lotus flowers (representing purity and healing), and protective animals.
+                </p>
+                <p className="text-foreground/90">
+                  During health challenges, many people turn to these specialized omamori for spiritual support alongside medical treatment. The designs emphasize renewal, strength, and the body's natural healing processes, providing comfort and hope during difficult times.
+                </p>
+                
+                <Card className="overflow-hidden mt-6">
+                  <img 
+                    src={healthOmamori}
+                    alt="Health and wellness omamori featuring medical symbols and healing herbs in green and white colors"
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="p-4">
+                    <p className="text-sm text-muted-foreground">
+                      Health protection omamori designed to support physical wellness and spiritual healing
+                    </p>
+                  </div>
+                </Card>
+              </section>
+
+              {/* Section 10: Famous Shrines for Omamori Collection */}
+              <section>
+                <h2 className="text-2xl font-bold mb-4 heading-gradient">Famous Shrines for Omamori Collection</h2>
+                <p className="text-foreground/90 mb-4">
+                  Certain shrines have become renowned for their unique and beautiful omamori designs. Each location offers charms that reflect local traditions, deities, and artistic styles, making shrine-hopping an essential activity for omamori collectors.
+                </p>
+
+                <div className="space-y-6">
+                  <div className="border-l-4 border-primary pl-6">
+                    <h3 className="font-semibold text-lg mb-2 text-primary">Kiyomizu-dera, Kyoto</h3>
+                    <p className="text-foreground/90 mb-4">
+                      Famous for its love omamori and seasonal designs that change with Kyoto's beautiful seasons. The temple's elevated position and UNESCO World Heritage status make its omamori particularly meaningful for visitors seeking both spiritual and cultural experiences.
+                    </p>
+                    
+                    <Card className="overflow-hidden">
+                      <img 
+                        src={kiyomizuTemple}
+                        alt="Kiyomizu-dera temple in Kyoto featuring traditional wooden architecture and seasonal beauty"
+                        className="w-full h-48 object-cover"
+                      />
+                      <div className="p-3">
+                        <p className="text-sm text-muted-foreground">
+                          The iconic Kiyomizu-dera temple, renowned for its love omamori and stunning seasonal views
+                        </p>
+                      </div>
+                    </Card>
+                  </div>
+
+                  <div className="border-l-4 border-accent pl-6">
+                    <h3 className="font-semibold text-lg mb-2 text-primary">Senso-ji, Tokyo</h3>
+                    <p className="text-foreground/90 mb-4">
+                      Tokyo's oldest temple offers a wide variety of omamori, including unique designs featuring Tokyo landmarks. The bustling Asakusa district atmosphere adds to the spiritual energy of these traditional charms.
+                    </p>
+                    
+                    <Card className="overflow-hidden">
+                      <img 
+                        src={sensojiTemple}
+                        alt="Senso-ji temple in Tokyo with traditional pagoda and lanterns in the historic Asakusa district"
+                        className="w-full h-48 object-cover"
+                      />
+                      <div className="p-3">
+                        <p className="text-sm text-muted-foreground">
+                          Historic Senso-ji temple in Asakusa, offering diverse omamori designs reflecting Tokyo's spirit
+                        </p>
+                      </div>
+                    </Card>
+                  </div>
+                </div>
+              </section>
+
+              {/* Section 11: Omamori Comparison Table */}
+              <section>
+                <h2 className="text-2xl font-bold mb-4 heading-gradient">Omamori Types Comparison Guide</h2>
+                <p className="text-foreground/90 mb-6">
+                  This comprehensive comparison table helps you choose the right omamori based on your specific needs and circumstances. Each type offers unique benefits and symbolic meanings rooted in Japanese spiritual traditions.
+                </p>
+                
+                <div className="overflow-x-auto">
+                  <table className="modern-table">
+                    <thead>
+                      <tr>
+                        <th>Omamori Type</th>
+                        <th>Primary Purpose</th>
+                        <th>Best For</th>
+                        <th>Common Colors</th>
+                        <th>Popular Symbols</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Academic Success</td>
+                        <td>Educational achievement</td>
+                        <td>Students, exams</td>
+                        <td>Blue, White, Gold</td>
+                        <td>Owls, Books, Brushes</td>
+                      </tr>
+                      <tr>
+                        <td>Love & Relationships</td>
+                        <td>Romance, partnerships</td>
+                        <td>Singles, couples</td>
+                        <td>Pink, Red, White</td>
+                        <td>Hearts, Cherry blossoms</td>
+                      </tr>
+                      <tr>
+                        <td>Business Success</td>
+                        <td>Career, prosperity</td>
+                        <td>Professionals, entrepreneurs</td>
+                        <td>Gold, Green, Red</td>
+                        <td>Coins, Lucky gods</td>
+                      </tr>
+                      <tr>
+                        <td>Health & Wellness</td>
+                        <td>Physical well-being</td>
+                        <td>Health recovery</td>
+                        <td>Green, White, Blue</td>
+                        <td>Herbs, Lotus, Cranes</td>
+                      </tr>
+                      <tr>
+                        <td>Travel Safety</td>
+                        <td>Journey protection</td>
+                        <td>Travelers, commuters</td>
+                        <td>Blue, Silver, White</td>
+                        <td>Planes, Ships, Roads</td>
+                      </tr>
+                      <tr>
+                        <td>Anime Themed</td>
+                        <td>Pop culture connection</td>
+                        <td>Fans, collectors</td>
+                        <td>Character specific</td>
+                        <td>Anime characters</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+              {/* Section 12: Collecting and Care Guidelines */}
+              <section>
+                <h2 className="text-2xl font-bold mb-4 heading-gradient">Omamori Collecting and Care Guidelines</h2>
+                <div className="bg-accent/10 rounded-lg p-6 space-y-4">
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2 text-primary">Respectful Collecting</h3>
+                    <p className="text-foreground/90">
+                      Remember that omamori are sacred items first, collectibles second. Approach your collection with respect for the spiritual significance and cultural importance of these blessed charms.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2 text-primary">Annual Renewal Tradition</h3>
+                    <p className="text-foreground/90">
+                      Traditional practice suggests replacing omamori annually, typically at New Year. Return old charms to the shrine for proper disposal through the omamori-burning ceremony (dondo-yaki).
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2 text-primary">Proper Display and Storage</h3>
+                    <p className="text-foreground/90">
+                      Keep omamori in clean, respectful places. Avoid placing them on the ground or in areas where they might be damaged. Many collectors use special displays or keep them in dedicated pouches.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2 text-primary">Never Open the Pouch</h3>
+                    <p className="text-foreground/90">
+                      Traditional belief holds that opening an omamori releases its protective power. Keep the fabric pouch sealed to maintain the charm's spiritual effectiveness.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
               <Card className="overflow-hidden">
                 <img 
                   src={templeInterior}
-                  alt="Peaceful Japanese temple interior"
+                  alt="Peaceful Japanese temple interior with traditional architecture and spiritual atmosphere"
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-4">
                   <p className="text-sm text-muted-foreground">
-                    The serene interior of a traditional Japanese temple where omamori are blessed
+                    The serene interior of a traditional Japanese temple where omamori receive their sacred blessings
                   </p>
                 </div>
               </Card>
-
-              <section>
-                <h2 className="text-2xl font-bold mb-4 heading-gradient">Where to Find the Best Omamori</h2>
-                <div className="space-y-4">
-                  <div className="border-l-4 border-primary pl-4">
-                    <h3 className="font-semibold text-lg mb-2">Kiyomizu-dera, Kyoto</h3>
-                    <p className="text-foreground/90">Famous for love omamori and beautiful traditional designs with seasonal variations.</p>
-                  </div>
-                  <div className="border-l-4 border-primary pl-4">
-                    <h3 className="font-semibold text-lg mb-2">Senso-ji, Tokyo</h3>
-                    <p className="text-foreground/90">Offers a wide variety of omamori including unique designs featuring Tokyo landmarks.</p>
-                  </div>
-                  <div className="border-l-4 border-primary pl-4">
-                    <h3 className="font-semibold text-lg mb-2">Fujisan Hongū Sengen Taisha</h3>
-                    <p className="text-foreground/90">Specializes in Mount Fuji-themed omamori, perfect for climbing safety and achievement.</p>
-                  </div>
-                </div>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-bold mb-4 heading-gradient">Collecting Tips</h2>
-                <div className="bg-accent/30 rounded-lg p-6 space-y-3">
-                  <p className="text-foreground/90">
-                    <strong>Respect the Purpose:</strong> Remember that omamori are sacred items. While collecting is fine, treat them with respect.
-                  </p>
-                  <p className="text-foreground/90">
-                    <strong>One Year Rule:</strong> Traditional belief suggests replacing omamori annually, returning old ones to the shrine.
-                  </p>
-                  <p className="text-foreground/90">
-                    <strong>Display Considerations:</strong> Keep omamori in clean, respectful places. Avoid tossing them in bags with other items.
-                  </p>
-                </div>
-              </section>
             </div>
           </article>
         </div>
@@ -177,7 +488,7 @@ const ArticleContent = () => {
             </Card>
 
             {/* Newsletter */}
-            <Card className="p-6 bg-gradient-to-br from-primary/10 to-primary/5">
+            <Card className="p-6 bg-gradient-to-br from-primary/10 to-accent/10">
               <h3 className="font-bold text-lg mb-3 text-primary">Stay Updated</h3>
               <p className="text-sm text-foreground/90 mb-4">Get the latest travel tips and cultural insights delivered to your inbox.</p>
               <div className="space-y-3">

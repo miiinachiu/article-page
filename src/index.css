@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 220 13% 18%;
 
-    --primary: 174 74% 56%;
+    --primary: 165 31% 65%; /* TravelYam Green #88C0B6 */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 174 25% 95%;
@@ -26,25 +26,26 @@ All colors MUST be HSL.
     --muted: 220 14% 96%;
     --muted-foreground: 220 9% 46%;
 
-    --accent: 174 25% 95%;
-    --accent-foreground: 174 74% 36%;
+    --accent: 49 100% 71%; /* TravelYam Yellow #FFD96A */
+    --accent-foreground: 49 100% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 174 74% 56%;
+    --ring: 165 31% 65%;
 
-    /* Custom design tokens */
-    --primary-gradient: linear-gradient(135deg, hsl(174 74% 56%), hsl(174 84% 67%));
-    --hero-gradient: linear-gradient(180deg, hsl(174 25% 98%), hsl(0 0% 100%));
-    --text-gradient: linear-gradient(135deg, hsl(174 74% 46%), hsl(174 54% 36%));
+    /* TravelYam Custom design tokens */
+    --primary-gradient: linear-gradient(135deg, hsl(165 31% 65%), hsl(165 41% 75%));
+    --accent-gradient: linear-gradient(135deg, hsl(49 100% 71%), hsl(49 100% 81%));
+    --hero-gradient: linear-gradient(180deg, hsl(165 25% 98%), hsl(0 0% 100%));
+    --text-gradient: linear-gradient(135deg, hsl(165 31% 55%), hsl(165 21% 45%));
     
-    /* Shadows */
-    --shadow-soft: 0 2px 8px hsl(174 74% 56% / 0.08);
-    --shadow-medium: 0 8px 30px hsl(174 74% 56% / 0.12);
-    --shadow-large: 0 20px 50px hsl(174 74% 56% / 0.15);
+    /* TravelYam Shadows */
+    --shadow-soft: 0 2px 8px hsl(165 31% 65% / 0.08);
+    --shadow-medium: 0 8px 30px hsl(165 31% 65% / 0.12);
+    --shadow-large: 0 20px 50px hsl(165 31% 65% / 0.15);
 
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -79,24 +80,24 @@ All colors MUST be HSL.
     --popover: 220 27% 8%;
     --popover-foreground: 220 9% 95%;
 
-    --primary: 174 74% 56%;
+    --primary: 165 31% 65%; /* TravelYam Green #88C0B6 */
     --primary-foreground: 220 27% 8%;
 
     --secondary: 220 27% 12%;
-    --secondary-foreground: 174 74% 56%;
+    --secondary-foreground: 165 31% 65%;
 
     --muted: 220 27% 12%;
     --muted-foreground: 220 9% 65%;
 
-    --accent: 220 27% 12%;
-    --accent-foreground: 174 74% 56%;
+    --accent: 49 100% 71%; /* TravelYam Yellow #FFD96A */
+    --accent-foreground: 49 100% 15%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 220 27% 12%;
     --input: 220 27% 12%;
-    --ring: 174 74% 56%;
+    --ring: 165 31% 65%;
 
     /* Dark mode shadows */
     --shadow-soft: 0 2px 8px hsl(0 0% 0% / 0.3);
@@ -128,6 +129,30 @@ All colors MUST be HSL.
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  /* Modern Table Styles */
+  .modern-table {
+    @apply w-full border-collapse;
+    border-spacing: 0;
+  }
+  
+  .modern-table th {
+    @apply bg-primary text-primary-foreground font-semibold text-left px-4 py-3;
+    border-bottom: 2px solid hsl(var(--primary));
+  }
+  
+  .modern-table td {
+    @apply border-b border-border px-4 py-3;
+    transition: var(--transition-smooth);
+  }
+  
+  .modern-table tr:hover td {
+    @apply bg-accent/20;
+  }
+  
+  .modern-table tr:nth-child(even) td {
+    @apply bg-muted/30;
   }
 
   /* Custom scrollbar */
