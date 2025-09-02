@@ -3,7 +3,6 @@ import BreadcrumbNav from "@/components/breadcrumb-nav";
 import ArticleHero from "@/components/article-hero";
 import ArticleContent from "@/components/article-content";
 import ReaderDeals from "@/components/reader-deals";
-import RelatedReading from "@/components/related-reading";
 import ArticleFooter from "@/components/article-footer";
 import SidebarLayout from "@/components/sidebar-layout";
 
@@ -29,7 +28,6 @@ const Index = () => {
         />
         <ArticleContent />
         <ReaderDeals />
-        <RelatedReading />
         <ArticleFooter />
       </div>
     </SidebarLayout>
