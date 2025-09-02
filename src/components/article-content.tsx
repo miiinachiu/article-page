@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { BannerAd, SidebarAd, InArticleAd } from "@/components/ad-placements";
 import RelatedReading from "@/components/related-reading";
+import ArticleImage from "@/components/article-image";
 import omamoricollection from "@/assets/omamori-collection.jpg";
 import templeInterior from "@/assets/temple-interior.jpg";
 import blessingRitual from "@/assets/blessing-ritual.jpg";
@@ -22,7 +23,7 @@ const ArticleContent = () => {
         {/* Main Content */}
         <div className="lg:col-span-2">
           <article className="prose prose-lg max-w-none">
-            <div className="space-y-8">
+            <div className="space-y-section">
               {/* Introduction */}
               <div className="text-lg leading-relaxed text-foreground/90">
                 <p>
@@ -34,19 +35,11 @@ const ArticleContent = () => {
               </div>
 
               {/* Featured Image */}
-              <Card className="overflow-hidden">
-                 <img 
-                   src={omamoricollection}
-                   alt="Collection of colorful Japanese omamori charms displaying various traditional and modern designs"
-                   className="w-full h-[800px] object-cover"
-                   style={{ maxWidth: '1200px', margin: '0 auto' }}
-                 />
-                <div className="p-4">
-                  <p className="text-sm text-muted-foreground">
-                    A stunning collection of traditional and modern omamori showcasing the artistic diversity of Japanese protective charms
-                  </p>
-                </div>
-              </Card>
+              <ArticleImage
+                src={omamoricollection}
+                alt="Collection of colorful Japanese omamori charms displaying various traditional and modern designs"
+                caption="A stunning collection of traditional and modern omamori showcasing the artistic diversity of Japanese protective charms"
+              />
 
               {/* Section 1: The Sacred Origins of Omamori */}
               <section>
@@ -58,19 +51,12 @@ const ArticleContent = () => {
                   The word "omamori" literally means "to protect," and each charm is believed to hold the spiritual power of the deity (kami) from the shrine where it was blessed. Traditional colors like red, white, and gold carry specific meanings—red for protection against evil, white for purification, and gold for prosperity.
                 </p>
                 
-                <Card className="overflow-hidden mt-6">
-                   <img 
-                     src={blessingRitual}
-                     alt="Traditional Japanese shrine maiden performing omamori blessing ritual with sacred charms"
-                     className="w-full h-[800px] object-cover"
-                     style={{ maxWidth: '1200px', margin: '0 auto' }}
-                   />
-                  <div className="p-4">
-                    <p className="text-sm text-muted-foreground">
-                      A shrine maiden (miko) performing the traditional blessing ritual for omamori charms
-                    </p>
-                  </div>
-                </Card>
+                <ArticleImage
+                  src={blessingRitual}
+                  alt="Traditional Japanese shrine maiden performing omamori blessing ritual with sacred charms"
+                  caption="A shrine maiden (miko) performing the traditional blessing ritual for omamori charms"
+                  className="mt-element"
+                />
               </section>
 
               {/* Section 2: Anime-Themed Omamori */}
@@ -428,19 +414,11 @@ const ArticleContent = () => {
                 </div>
               </section>
 
-              <Card className="overflow-hidden">
-                 <img 
-                   src={templeInterior}
-                   alt="Peaceful Japanese temple interior with traditional architecture and spiritual atmosphere"
-                   className="w-full h-[800px] object-cover"
-                   style={{ maxWidth: '1200px', margin: '0 auto' }}
-                 />
-                <div className="p-4">
-                  <p className="text-sm text-muted-foreground">
-                    The serene interior of a traditional Japanese temple where omamori receive their sacred blessings
-                  </p>
-                </div>
-              </Card>
+              <ArticleImage
+                src={templeInterior}
+                alt="Peaceful Japanese temple interior with traditional architecture and spiritual atmosphere"
+                caption="The serene interior of a traditional Japanese temple where omamori receive their sacred blessings"
+              />
             </div>
           </article>
           
