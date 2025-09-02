@@ -448,6 +448,9 @@ const ArticleContent = () => {
                 <a href="#" className="block hover:text-primary transition-colors">
                   <p className="font-medium text-sm">東京近郊一日遊推薦</p>
                 </a>
+                <a href="#" className="block hover:text-primary transition-colors">
+                  <p className="font-medium text-sm">東京近郊一日遊推薦</p>
+                </a>
               </div>
             </Card>
 
@@ -459,21 +462,24 @@ const ArticleContent = () => {
                   <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0"></div>
                   <div>
                     <p className="font-medium text-sm line-clamp-2">Japanese Tea Ceremony: A Guide to Traditional Culture</p>
-                    <p className="text-xs text-muted-foreground mt-1">3 days ago</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0"></div>
                   <div>
                     <p className="font-medium text-sm line-clamp-2">Best Time to Visit Japan: Seasonal Guide</p>
-                    <p className="text-xs text-muted-foreground mt-1">1 week ago</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0"></div>
                   <div>
                     <p className="font-medium text-sm line-clamp-2">Traditional Japanese Crafts You Must See</p>
-                    <p className="text-xs text-muted-foreground mt-1">2 weeks ago</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-sm line-clamp-2">Traditional Japanese Crafts You Must See</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-sm line-clamp-2">Traditional Japanese Crafts You Must See</p>
                   </div>
                 </div>
               </div>
