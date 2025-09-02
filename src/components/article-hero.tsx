@@ -22,10 +22,10 @@ const ArticleHero = ({
 }: ArticleHeroProps) => {
   return (
     <div className="relative overflow-hidden">
-      {/* Hero Image with Gradient Overlay */}
-      <div className="relative h-[50vh] min-h-[350px] flex items-end">
+      {/* Hero Image with Gradient Overlay - 1200x630 aspect ratio */}
+      <div className="relative aspect-[1200/630] w-full max-w-5xl mx-auto">
         <div className="container mx-auto px-6 lg:px-12 xl:px-24">
-          <div className="relative h-full rounded-lg overflow-hidden max-w-4xl mx-auto">
+          <div className="relative h-full rounded-lg overflow-hidden">
             <div 
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url(${heroImage})` }}
