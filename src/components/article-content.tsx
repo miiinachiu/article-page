@@ -1,10 +1,14 @@
 import { Card } from "@/components/ui/card";
+import { BannerAd, SidebarAd, InArticleAd } from "@/components/ad-placements";
 import omamoricollection from "@/assets/omamori-collection.jpg";
 import templeInterior from "@/assets/temple-interior.jpg";
 
 const ArticleContent = () => {
   return (
     <div className="container mx-auto px-6 py-12">
+      {/* Top Banner Ad */}
+      <BannerAd className="mb-8" />
+      
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
         {/* Main Content */}
         <div className="lg:col-span-2">
@@ -67,6 +71,9 @@ const ArticleContent = () => {
                 </div>
               </section>
 
+              {/* In-Article Ad */}
+              <InArticleAd />
+
               <Card className="overflow-hidden">
                 <img 
                   src={templeInterior}
@@ -119,6 +126,9 @@ const ArticleContent = () => {
         {/* Sidebar */}
         <div className="lg:col-span-1">
           <div className="sticky top-8 space-y-8">
+            {/* Sidebar Ad */}
+            <SidebarAd />
+            
             {/* Hot Topics */}
             <Card className="p-6">
               <h3 className="font-bold text-lg mb-4 text-primary">熱門話題</h3>
@@ -181,6 +191,9 @@ const ArticleContent = () => {
                 </button>
               </div>
             </Card>
+
+            {/* Bottom Sidebar Ad */}
+            <SidebarAd />
           </div>
         </div>
       </div>

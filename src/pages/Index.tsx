@@ -2,6 +2,7 @@ import ArticleHeader from "@/components/article-header";
 import BreadcrumbNav from "@/components/breadcrumb-nav";
 import ArticleHero from "@/components/article-hero";
 import ArticleContent from "@/components/article-content";
+import ArticleFooter from "@/components/article-footer";
 
 const Index = () => {
   const breadcrumbItems = [
@@ -23,6 +24,7 @@ const Index = () => {
         tags={["日本", "神社", "御守", "文化", "旅遊"]}
       />
       <ArticleContent />
+      <ArticleFooter />
     </div>
   );
 };
