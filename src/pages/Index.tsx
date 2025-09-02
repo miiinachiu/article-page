@@ -25,7 +25,9 @@ const Index = () => {
         tags={["日本", "神社", "御守", "文化", "旅遊"]}
       />
       <ArticleContent />
-      <ReaderDeals />
+      <div className="container mx-auto px-6">
+        <ReaderDeals />
+      </div>
       <ArticleFooter />
     </div>
   );

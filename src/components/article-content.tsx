@@ -35,11 +35,12 @@ const ArticleContent = () => {
 
               {/* Featured Image */}
               <Card className="overflow-hidden">
-                <img 
-                  src={omamoricollection}
-                  alt="Collection of colorful Japanese omamori charms displaying various traditional and modern designs"
-                  className="w-full h-64 object-cover"
-                />
+                 <img 
+                   src={omamoricollection}
+                   alt="Collection of colorful Japanese omamori charms displaying various traditional and modern designs"
+                   className="w-full h-[800px] object-cover"
+                   style={{ maxWidth: '1200px', margin: '0 auto' }}
+                 />
                 <div className="p-4">
                   <p className="text-sm text-muted-foreground">
                     A stunning collection of traditional and modern omamori showcasing the artistic diversity of Japanese protective charms
@@ -58,11 +59,12 @@ const ArticleContent = () => {
                 </p>
                 
                 <Card className="overflow-hidden mt-6">
-                  <img 
-                    src={blessingRitual}
-                    alt="Traditional Japanese shrine maiden performing omamori blessing ritual with sacred charms"
-                    className="w-full h-64 object-cover"
-                  />
+                   <img 
+                     src={blessingRitual}
+                     alt="Traditional Japanese shrine maiden performing omamori blessing ritual with sacred charms"
+                     className="w-full h-[800px] object-cover"
+                     style={{ maxWidth: '1200px', margin: '0 auto' }}
+                   />
                   <div className="p-4">
                     <p className="text-sm text-muted-foreground">
                       A shrine maiden (miko) performing the traditional blessing ritual for omamori charms
@@ -82,11 +84,12 @@ const ArticleContent = () => {
                 </p>
                 
                 <Card className="overflow-hidden mt-6">
-                  <img 
-                    src={animeOmamori}
-                    alt="Colorful anime-themed omamori featuring Demon Slayer character designs and motifs"
-                    className="w-full h-64 object-cover"
-                  />
+                   <img 
+                     src={animeOmamori}
+                     alt="Colorful anime-themed omamori featuring Demon Slayer character designs and motifs"
+                     className="w-full h-[800px] object-cover"
+                     style={{ maxWidth: '1200px', margin: '0 auto' }}
+                   />
                   <div className="p-4">
                     <p className="text-sm text-muted-foreground">
                       Anime-inspired omamori featuring popular Demon Slayer designs that blend traditional craftsmanship with modern pop culture
@@ -106,11 +109,12 @@ const ArticleContent = () => {
                 </p>
                 
                 <Card className="overflow-hidden mt-6">
-                  <img 
-                    src={sanrioOmamori}
-                    alt="Cute Sanrio character themed omamori charms featuring Hello Kitty and other kawaii designs"
-                    className="w-full h-64 object-cover"
-                  />
+                   <img 
+                     src={sanrioOmamori}
+                     alt="Cute Sanrio character themed omamori charms featuring Hello Kitty and other kawaii designs"
+                     className="w-full h-[800px] object-cover"
+                     style={{ maxWidth: '1200px', margin: '0 auto' }}
+                   />
                   <div className="p-4">
                     <p className="text-sm text-muted-foreground">
                       Adorable Sanrio character omamori that combine traditional Japanese spirituality with beloved kawaii culture
@@ -133,11 +137,12 @@ const ArticleContent = () => {
                 </p>
                 
                 <Card className="overflow-hidden mt-6">
-                  <img 
-                    src={fujiOmamori}
-                    alt="Mount Fuji themed omamori charms featuring the sacred mountain's silhouette in traditional designs"
-                    className="w-full h-64 object-cover"
-                  />
+                   <img 
+                     src={fujiOmamori}
+                     alt="Mount Fuji themed omamori charms featuring the sacred mountain's silhouette in traditional designs"
+                     className="w-full h-[800px] object-cover"
+                     style={{ maxWidth: '1200px', margin: '0 auto' }}
+                   />
                   <div className="p-4">
                     <p className="text-sm text-muted-foreground">
                       Mount Fuji themed omamori showcasing the sacred mountain's spiritual power and artistic beauty
@@ -157,11 +162,12 @@ const ArticleContent = () => {
                 </p>
                 
                 <Card className="overflow-hidden mt-6">
-                  <img 
-                    src={academicOmamori}
-                    alt="Academic success omamori designed for students featuring scholarly symbols and educational motifs"
-                    className="w-full h-64 object-cover"
-                  />
+                   <img 
+                     src={academicOmamori}
+                     alt="Academic success omamori designed for students featuring scholarly symbols and educational motifs"
+                     className="w-full h-[800px] object-cover"
+                     style={{ maxWidth: '1200px', margin: '0 auto' }}
+                   />
                   <div className="p-4">
                     <p className="text-sm text-muted-foreground">
                       Academic success omamori featuring traditional symbols of learning and wisdom for student protection
@@ -181,11 +187,12 @@ const ArticleContent = () => {
                 </p>
                 
                 <Card className="overflow-hidden mt-6">
-                  <img 
-                    src={loveOmamori}
-                    alt="Love and relationship omamori charms in pink and red colors with romantic heart symbols"
-                    className="w-full h-64 object-cover"
-                  />
+                   <img 
+                     src={loveOmamori}
+                     alt="Love and relationship omamori charms in pink and red colors with romantic heart symbols"
+                     className="w-full h-[800px] object-cover"
+                     style={{ maxWidth: '1200px', margin: '0 auto' }}
+                   />
                   <div className="p-4">
                     <p className="text-sm text-muted-foreground">
                       Romantic love omamori designed to attract relationships and strengthen bonds between couples
@@ -205,11 +212,12 @@ const ArticleContent = () => {
                 </p>
                 
                 <Card className="overflow-hidden mt-6">
-                  <img 
-                    src={businessOmamori}
-                    alt="Business success omamori with gold and green colors featuring prosperity symbols for career growth"
-                    className="w-full h-64 object-cover"
-                  />
+                   <img 
+                     src={businessOmamori}
+                     alt="Business success omamori with gold and green colors featuring prosperity symbols for career growth"
+                     className="w-full h-[800px] object-cover"
+                     style={{ maxWidth: '1200px', margin: '0 auto' }}
+                   />
                   <div className="p-4">
                     <p className="text-sm text-muted-foreground">
                       Business prosperity omamori designed to attract wealth, career success, and entrepreneurial fortune
@@ -229,11 +237,12 @@ const ArticleContent = () => {
                 </p>
                 
                 <Card className="overflow-hidden mt-6">
-                  <img 
-                    src={travelOmamori}
-                    alt="Travel safety omamori charms featuring airplane and road symbols for journey protection"
-                    className="w-full h-64 object-cover"
-                  />
+                   <img 
+                     src={travelOmamori}
+                     alt="Travel safety omamori charms featuring airplane and road symbols for journey protection"
+                     className="w-full h-[800px] object-cover"
+                     style={{ maxWidth: '1200px', margin: '0 auto' }}
+                   />
                   <div className="p-4">
                     <p className="text-sm text-muted-foreground">
                       Travel protection omamori designed to ensure safe journeys and protect travelers during their adventures
@@ -253,11 +262,12 @@ const ArticleContent = () => {
                 </p>
                 
                 <Card className="overflow-hidden mt-6">
-                  <img 
-                    src={healthOmamori}
-                    alt="Health and wellness omamori featuring medical symbols and healing herbs in green and white colors"
-                    className="w-full h-64 object-cover"
-                  />
+                   <img 
+                     src={healthOmamori}
+                     alt="Health and wellness omamori featuring medical symbols and healing herbs in green and white colors"
+                     className="w-full h-[800px] object-cover"
+                     style={{ maxWidth: '1200px', margin: '0 auto' }}
+                   />
                   <div className="p-4">
                     <p className="text-sm text-muted-foreground">
                       Health protection omamori designed to support physical wellness and spiritual healing
@@ -419,11 +429,12 @@ const ArticleContent = () => {
               </section>
 
               <Card className="overflow-hidden">
-                <img 
-                  src={templeInterior}
-                  alt="Peaceful Japanese temple interior with traditional architecture and spiritual atmosphere"
-                  className="w-full h-64 object-cover"
-                />
+                 <img 
+                   src={templeInterior}
+                   alt="Peaceful Japanese temple interior with traditional architecture and spiritual atmosphere"
+                   className="w-full h-[800px] object-cover"
+                   style={{ maxWidth: '1200px', margin: '0 auto' }}
+                 />
                 <div className="p-4">
                   <p className="text-sm text-muted-foreground">
                     The serene interior of a traditional Japanese temple where omamori receive their sacred blessings

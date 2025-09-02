@@ -43,15 +43,18 @@ const ReaderDeals = () => {
   ];
 
   return (
-    <section className="py-8 bg-gradient-to-br from-background to-muted/20">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-6">
-          <h2 className="text-2xl font-bold text-foreground mb-2">
+    <section className="py-12">
+      <div className="max-w-4xl mx-auto">
+        <div className="mb-8">
+          <h2 className="text-2xl font-bold heading-gradient mb-4">
             輕旅行讀者優惠
           </h2>
+          <p className="text-foreground/70">
+            精選旅遊品牌合作優惠，為輕旅行讀者提供最划算的旅遊體驗
+          </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {deals.map((deal) => (
             <Card key={deal.id} className="group hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border-0 shadow-md bg-card/80 backdrop-blur-sm">
               <CardContent className="p-4">

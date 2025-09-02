@@ -52,54 +52,17 @@ const relatedArticles: RelatedArticle[] = [
 
 const RelatedReading = () => {
   return (
-    <section className="my-16">
-      <div className="flex items-center gap-3 mb-8">
-        <h2 className="text-3xl font-bold heading-gradient">Related Reading</h2>
-        <TrendingUp className="h-6 w-6 text-primary" />
-      </div>
+    <section className="my-12">
+      <h2 className="text-2xl font-bold mb-6 heading-gradient">Related Reading</h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="space-y-4">
         {relatedArticles.map((article) => (
-          <Card key={article.id} className="group hover:shadow-lg transition-all duration-300 cursor-pointer overflow-hidden">
-            <div className="p-6">
-              <div className="flex items-start justify-between mb-3">
-                <Badge variant="secondary" className="bg-primary/10 text-primary">
-                  {article.category}
-                </Badge>
-                {article.trending && (
-                  <Badge variant="outline" className="text-accent border-accent/50 bg-accent/10">
-                    <TrendingUp className="h-3 w-3 mr-1" />
-                    Trending
-                  </Badge>
-                )}
-              </div>
-              
-              <h3 className="font-bold text-lg mb-3 text-foreground group-hover:text-primary transition-colors line-clamp-2">
-                {article.title}
-              </h3>
-              
-              <p className="text-foreground/70 text-sm mb-4 line-clamp-3">
-                {article.excerpt}
-              </p>
-              
-              <div className="flex items-center justify-between text-xs text-muted-foreground">
-                <span>{article.publishDate}</span>
-                <div className="flex items-center gap-1">
-                  <Clock className="h-3 w-3" />
-                  <span>{article.readTime}</span>
-                </div>
-              </div>
-            </div>
-            
-            <div className="h-1 bg-gradient-to-r from-primary to-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-          </Card>
+          <div key={article.id} className="border-b border-border/30 pb-4 last:border-b-0">
+            <h3 className="font-medium text-foreground hover:text-primary transition-colors cursor-pointer">
+              {article.title}
+            </h3>
+          </div>
         ))}
-      </div>
-      
-      <div className="text-center mt-8">
-        <button className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">
-          View All Articles
-        </button>
       </div>
     </section>
   );
