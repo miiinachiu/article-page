@@ -32,6 +32,7 @@ const Index = () => {
         category="日本旅遊"
         author="輕旅行_SASA"
         publishDate="2025.09.02"
+        readTime="5 分鐘閱讀"
         tags={["日本", "神社", "御守", "文化", "旅遊"]}
       />
       <ArticleContent />
