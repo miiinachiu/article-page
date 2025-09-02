@@ -13,19 +13,34 @@ const ArticleHeader = () => {
             {/* Navigation */}
             <nav className="hidden md:flex items-center gap-6">
               <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground text-sm font-medium transition-colors">
-                首頁
-              </a>
-              <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground text-sm font-medium transition-colors">
-                國外旅遊
-              </a>
-              <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground text-sm font-medium transition-colors">
-                日本旅遊
+                景點
               </a>
               <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground text-sm font-medium transition-colors">
                 美食
               </a>
               <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground text-sm font-medium transition-colors">
                 住宿
+              </a>
+              <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground text-sm font-medium transition-colors">
+                登山健行
+              </a>
+              <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground text-sm font-medium transition-colors">
+                戶外休閒
+              </a>
+                            <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground text-sm font-medium transition-colors">
+                國外旅遊
+              </a>
+              <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground text-sm font-medium transition-colors">
+                生活快訊
+              </a>
+              <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground text-sm font-medium transition-colors">
+                熱門話題
+              </a>
+              <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground text-sm font-medium transition-colors">
+                駐站玩家
+              </a>
+              <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground text-sm font-medium transition-colors">
+                創作者星球
               </a>
             </nav>
           </div>
