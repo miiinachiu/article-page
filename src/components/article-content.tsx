@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { BannerAd, SidebarAd, InArticleAd } from "@/components/ad-placements";
+import RelatedReading from "@/components/related-reading";
 import omamoricollection from "@/assets/omamori-collection.jpg";
 import templeInterior from "@/assets/temple-interior.jpg";
 import blessingRitual from "@/assets/blessing-ritual.jpg";
@@ -17,9 +18,6 @@ import sensojiTemple from "@/assets/sensoji-temple.jpg";
 const ArticleContent = () => {
   return (
     <div className="container mx-auto px-6 py-12">
-      {/* Top Banner Ad */}
-      <BannerAd className="mb-8" />
-      
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
         {/* Main Content */}
         <div className="lg:col-span-2">
@@ -325,8 +323,9 @@ const ArticleContent = () => {
                   This comprehensive comparison table helps you choose the right omamori based on your specific needs and circumstances. Each type offers unique benefits and symbolic meanings rooted in Japanese spiritual traditions.
                 </p>
                 
-                <div className="overflow-x-auto">
-                  <table className="modern-table">
+                <Card className="overflow-hidden">
+                  <div className="overflow-x-auto">
+                    <table className="modern-table">
                     <thead>
                       <tr>
                         <th>Omamori Type</th>
@@ -381,7 +380,8 @@ const ArticleContent = () => {
                       </tr>
                     </tbody>
                   </table>
-                </div>
+                  </div>
+                </Card>
               </section>
 
               {/* Section 12: Collecting and Care Guidelines */}
@@ -432,6 +432,9 @@ const ArticleContent = () => {
               </Card>
             </div>
           </article>
+          
+          {/* Related Reading Section */}
+          <RelatedReading />
         </div>
 
         {/* Sidebar */}
@@ -487,21 +490,6 @@ const ArticleContent = () => {
               </div>
             </Card>
 
-            {/* Newsletter */}
-            <Card className="p-6 bg-gradient-to-br from-primary/10 to-accent/10">
-              <h3 className="font-bold text-lg mb-3 text-primary">Stay Updated</h3>
-              <p className="text-sm text-foreground/90 mb-4">Get the latest travel tips and cultural insights delivered to your inbox.</p>
-              <div className="space-y-3">
-                <input 
-                  type="email" 
-                  placeholder="Enter your email"
-                  className="w-full px-3 py-2 text-sm border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
-                />
-                <button className="w-full bg-primary text-primary-foreground text-sm font-medium py-2 rounded-md hover:bg-primary/90 transition-colors">
-                  Subscribe
-                </button>
-              </div>
-            </Card>
 
             {/* Bottom Sidebar Ad */}
             <SidebarAd />
