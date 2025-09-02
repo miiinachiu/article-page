@@ -461,26 +461,32 @@ const ArticleContent = () => {
                 <div className="flex gap-3">
                   <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0"></div>
                   <div>
-                    <p className="font-medium text-sm line-clamp-2">Japanese Tea Ceremony: A Guide to Traditional Culture</p>
+                    <p className="font-medium text-sm line-clamp-2">2025出國打包行李必看：各國登機行李規範、最新行動電源攜帶限制</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0"></div>
                   <div>
-                    <p className="font-medium text-sm line-clamp-2">Best Time to Visit Japan: Seasonal Guide</p>
+                    <p className="font-medium text-sm line-clamp-2">2025年9月壽星生日優惠餐廳！火鍋、燒烤、吃到飽，各式餐廳生日優惠一次看</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0"></div>
                   <div>
-                    <p className="font-medium text-sm line-clamp-2">Traditional Japanese Crafts You Must See</p>
+                    <p className="font-medium text-sm line-clamp-2">2025社群爆紅美食推薦給你！黑衣人冰棒和奶油烤年糕超級夯</p>
                   </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0"></div>
                   <div>
-                    <p className="font-medium text-sm line-clamp-2">Traditional Japanese Crafts You Must See</p>
+                    <p className="font-medium text-sm line-clamp-2">興安夜市美食推薦！不用出國，就能吃到最道地緬甸料理！</p>
                   </div>
+                 <div className="flex gap-3">
+                  <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0"></div>
                   <div>
-                    <p className="font-medium text-sm line-clamp-2">Traditional Japanese Crafts You Must See</p>
+                    <p className="font-medium text-sm line-clamp-2">2025台北花海推薦！向日葵、圓仔花、波斯菊、菊花輪番綻放，捷運輕鬆到達</p>
                   </div>
+                </div>
                 </div>
               </div>
             </Card>
