@@ -29,7 +29,6 @@ const Index = () => {
         />
         <ArticleContent />
         <ReaderDeals />
-        <RelatedReading />
         <ArticleFooter />
       </div>
     </SidebarLayout>

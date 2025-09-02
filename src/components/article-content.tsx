@@ -433,7 +433,27 @@ const ArticleContent = () => {
             </div>
           </article>
           
-          
+          {/* View All Articles Section */}
+          <div className="text-center mt-12">
+            <button className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">
+              View All Articles
+            </button>
+          </div>
+        </div>
+        
+        {/* Sidebar Content */}
+        <div className="lg:col-span-1">
+          <div className="sticky top-8 space-y-8">
+            <SidebarAd />
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Banner Ad */}
+      <div className="mt-12">
+        <BannerAd />
+      </div>
+    </div>
   );
 };
 
