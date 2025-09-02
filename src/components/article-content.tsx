@@ -478,6 +478,14 @@ const ArticleContent = () => {
                 </div>
                 <div className="flex gap-3">
                   <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0"></div>
+                  <div>
+                    <p className="font-medium text-sm line-clamp-2">興安夜市美食推薦！不用出國，就能吃到最道地緬甸料理！</p>
+                  </div>
+                 <div className="flex gap-3">
+                  <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0"></div>
+                  <div>
+                    <p className="font-medium text-sm line-clamp-2">2025台北花海推薦！向日葵、圓仔花、波斯菊、菊花輪番綻放，捷運輕鬆到達</p>
+                  </div>
                 </div>
                 </div>
               </div>
