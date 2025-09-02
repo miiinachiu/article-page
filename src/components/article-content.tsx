@@ -433,25 +433,68 @@ const ArticleContent = () => {
             </div>
           </article>
           
-          {/* View All Articles Section */}
-          <div className="text-center mt-12">
-            <button className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">
-              View All Articles
-            </button>
-          </div>
+          {/* Related Reading Section */}
+          <RelatedReading />
         </div>
-        
-        {/* Sidebar Content */}
+
+        {/* Sidebar */}
         <div className="lg:col-span-1">
           <div className="sticky top-8 space-y-8">
+            {/* Sidebar Ad */}
+            <SidebarAd />
+            
+            {/* Hot Topics */}
+            <Card className="p-6">
+              <h3 className="font-bold text-lg mb-4 text-primary">熱門話題</h3>
+              <div className="space-y-3">
+                <a href="#" className="block hover:text-primary transition-colors">
+                  <p className="font-medium text-sm">2025年春節生肖吉祥物推薦</p>
+                </a>
+                <a href="#" className="block hover:text-primary transition-colors">
+                  <p className="font-medium text-sm">日本櫻花季最佳賞花地點</p>
+                </a>
+                <a href="#" className="block hover:text-primary transition-colors">
+                  <p className="font-medium text-sm">京都神社參拜完整指南</p>
+                </a>
+                <a href="#" className="block hover:text-primary transition-colors">
+                  <p className="font-medium text-sm">東京近郊一日遊推薦</p>
+                </a>
+              </div>
+            </Card>
+
+            {/* Related Articles */}
+            <Card className="p-6">
+              <h3 className="font-bold text-lg mb-4 text-primary">相關文章</h3>
+              <div className="space-y-4">
+                <div className="flex gap-3">
+                  <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0"></div>
+                  <div>
+                    <p className="font-medium text-sm line-clamp-2">Japanese Tea Ceremony: A Guide to Traditional Culture</p>
+                    <p className="text-xs text-muted-foreground mt-1">3 days ago</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0"></div>
+                  <div>
+                    <p className="font-medium text-sm line-clamp-2">Best Time to Visit Japan: Seasonal Guide</p>
+                    <p className="text-xs text-muted-foreground mt-1">1 week ago</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0"></div>
+                  <div>
+                    <p className="font-medium text-sm line-clamp-2">Traditional Japanese Crafts You Must See</p>
+                    <p className="text-xs text-muted-foreground mt-1">2 weeks ago</p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+
+            {/* Bottom Sidebar Ad */}
             <SidebarAd />
           </div>
         </div>
-      </div>
-
-      {/* Bottom Banner Ad */}
-      <div className="mt-12">
-        <BannerAd />
       </div>
     </div>
   );
