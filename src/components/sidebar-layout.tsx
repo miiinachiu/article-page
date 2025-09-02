@@ -1,5 +1,5 @@
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-import { AppSidebarContent } from "@/components/app-sidebar-content";
+import { AppSidebar } from "@/components/app-sidebar";
 import { Menu } from "lucide-react";
 
 interface SidebarLayoutProps {
@@ -12,7 +12,7 @@ const SidebarLayout = ({ children }: SidebarLayoutProps) => {
       <div className="min-h-screen flex w-full">
         {/* Sidebar - Hidden on mobile, shown on desktop */}
         <div className="hidden lg:block">
-          <AppSidebarContent />
+          <AppSidebar />
         </div>
 
         {/* Main content area */}
@@ -45,7 +45,7 @@ const SidebarLayout = ({ children }: SidebarLayoutProps) => {
 
         {/* Mobile sidebar overlay */}
         <div className="lg:hidden">
-          <AppSidebarContent />
+          <AppSidebar />
         </div>
       </div>
     </SidebarProvider>
