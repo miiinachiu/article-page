@@ -491,6 +491,63 @@ const ArticleContent = () => {
               </div>
             </Card>
 
+            {/* Reader Deals Section */}
+            <Card className="p-6">
+              <h3 className="font-bold text-lg mb-4 text-primary">輕旅行讀者優惠</h3>
+              <div className="space-y-4">
+                <div className="border rounded-lg p-4 hover:bg-muted/50 transition-colors">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 bg-[#FF6B35] rounded-lg flex items-center justify-center">
+                        <span className="text-white font-bold text-xs">A</span>
+                      </div>
+                      <div>
+                        <p className="font-medium text-sm">Agoda 日本酒店專屬優惠</p>
+                        <p className="text-xs text-muted-foreground">高達30%折扣</p>
+                      </div>
+                    </div>
+                    <a href="#" className="text-xs bg-primary text-primary-foreground px-3 py-1 rounded-full hover:bg-primary/90 transition-colors">
+                      立即預訂
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="border rounded-lg p-4 hover:bg-muted/50 transition-colors">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 bg-[#D32F2F] rounded-lg flex items-center justify-center">
+                        <span className="text-white font-bold text-xs">H</span>
+                      </div>
+                      <div>
+                        <p className="font-medium text-sm">Hotels.com 神社周邊住宿</p>
+                        <p className="text-xs text-muted-foreground">買10晚送1晚</p>
+                      </div>
+                    </div>
+                    <a href="#" className="text-xs bg-primary text-primary-foreground px-3 py-1 rounded-full hover:bg-primary/90 transition-colors">
+                      查看優惠
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="border rounded-lg p-4 hover:bg-muted/50 transition-colors">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 bg-[#003580] rounded-lg flex items-center justify-center">
+                        <span className="text-white font-bold text-xs">B</span>
+                      </div>
+                      <div>
+                        <p className="font-medium text-sm">Booking.com 溫泉旅館</p>
+                        <p className="text-xs text-muted-foreground">限時8折優惠</p>
+                      </div>
+                    </div>
+                    <a href="#" className="text-xs bg-primary text-primary-foreground px-3 py-1 rounded-full hover:bg-primary/90 transition-colors">
+                      立即預訂
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
 
             {/* Bottom Sidebar Ad */}
             <SidebarAd />
