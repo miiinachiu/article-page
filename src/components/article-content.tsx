@@ -449,7 +449,7 @@ const ArticleContent = () => {
                   <p className="font-medium text-sm">東京近郊一日遊推薦</p>
                 </a>
                 <a href="#" className="block hover:text-primary transition-colors">
-                  <p className="font-medium text-sm">東京近郊一日遊推薦</p>
+                  <p className="font-medium text-sm">大阪賞楓推薦/p>
                 </a>
               </div>
             </Card>
