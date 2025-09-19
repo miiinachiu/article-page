@@ -3,42 +3,39 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 const ReaderDeals = () => {
-  const deals = [
+  const experiences = [
     {
       id: 1,
-      brand: "Agoda",
-      title: "日本酒店專屬優惠",
-      discount: "高達30%折扣",
-      buttonText: "立即預訂",
-      brandColor: "bg-[#FF6B35]",
-      logoText: "Agoda"
+      title: "東京神社御守製作體驗",
+      description: "親手製作專屬御守，體驗日本傳統工藝文化",
+      price: "¥3,500",
+      duration: "2小時",
+      rating: "4.8",
+      reviews: "128",
+      image: "/api/placeholder/300/200",
+      category: "文化體驗"
     },
     {
       id: 2,
-      brand: "Hotels.com",
-      title: "神社周邊住宿推薦",
-      discount: "買10晚送1晚",
-      buttonText: "查看優惠",
-      brandColor: "bg-[#D32F2F]",
-      logoText: "Hotels.com"
+      title: "京都清水寺御守祈福之旅",
+      description: "專業導遊帶領，深度了解御守文化與祈福儀式",
+      price: "¥5,800",
+      duration: "3小時",
+      rating: "4.9",
+      reviews: "256",
+      image: "/api/placeholder/300/200",
+      category: "神社參拜"
     },
     {
       id: 3,
-      brand: "Booking.com",
-      title: "溫泉旅館特價",
-      discount: "限時8折",
-      buttonText: "立即預訂",
-      brandColor: "bg-[#003580]",
-      logoText: "Booking.com"
-    },
-    {
-      id: 4,
-      brand: "Expedia",
-      title: "機加酒套裝優惠",
-      discount: "套裝優惠20%",
-      buttonText: "查看套裝",
-      brandColor: "bg-[#FFC72C]",
-      logoText: "Expedia"
+      title: "淺草寺御守收藏導覽",
+      description: "探索東京最古老寺廟的御守歷史與收藏秘訣",
+      price: "¥2,800",
+      duration: "1.5小時",
+      rating: "4.7",
+      reviews: "89",
+      image: "/api/placeholder/300/200",
+      category: "導覽體驗"
     }
   ];
 
@@ -47,32 +44,53 @@ const ReaderDeals = () => {
       <div className="max-w-4xl mx-auto">
         <div className="mb-8">
           <h2 className="text-2xl font-bold heading-gradient mb-4">
-            輕旅行讀者優惠
+            預定一個體驗
           </h2>
           <p className="text-foreground/70">
-            精選旅遊品牌合作優惠，為輕旅行讀者提供最划算的旅遊體驗
+            深度體驗日本御守文化，創造難忘的旅行回憶
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {deals.map((deal) => (
-            <Card key={deal.id} className="group hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border-0 shadow-md bg-card/80 backdrop-blur-sm">
-              <CardContent className="p-4">
-                <div className="text-center">
-                  <div className={`${deal.brandColor} text-white px-3 py-1 rounded-full text-xs font-semibold mb-3 inline-block`}>
-                    {deal.logoText}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {experiences.map((experience) => (
+            <Card key={experience.id} className="group hover:shadow-xl transition-all duration-300 hover:scale-[1.02] border-0 shadow-lg bg-card overflow-hidden">
+              <div className="aspect-video bg-muted relative overflow-hidden">
+                <img 
+                  src={experience.image} 
+                  alt={experience.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <Badge className="absolute top-3 left-3 bg-primary text-primary-foreground">
+                  {experience.category}
+                </Badge>
+              </div>
+              <CardContent className="p-5">
+                <CardTitle className="text-lg font-bold text-foreground group-hover:text-primary transition-colors mb-2 line-clamp-2">
+                  {experience.title}
+                </CardTitle>
+                <CardDescription className="text-foreground/70 mb-4 line-clamp-2">
+                  {experience.description}
+                </CardDescription>
+                
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-2 text-sm text-foreground/70">
+                    <span>⏱️ {experience.duration}</span>
                   </div>
-                  <CardTitle className="text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-2">
-                    {deal.title}
-                  </CardTitle>
-                  <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20 text-xs mb-3">
-                    {deal.discount}
-                  </Badge>
+                  <div className="flex items-center gap-1 text-sm text-foreground/70">
+                    <span>⭐ {experience.rating}</span>
+                    <span>({experience.reviews})</span>
+                  </div>
+                </div>
+                
+                <div className="flex items-center justify-between">
+                  <div className="text-xl font-bold text-primary">
+                    {experience.price}
+                    <span className="text-sm font-normal text-foreground/70 ml-1">起</span>
+                  </div>
                   <Button 
-                    size="sm"
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-4 py-1 rounded-full transition-all duration-200 hover:shadow-md hover:scale-105 w-full text-xs"
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-6 py-2 rounded-lg transition-all duration-200 hover:shadow-md"
                   >
-                    {deal.buttonText}
+                    立即預訂
                   </Button>
                 </div>
               </CardContent>
