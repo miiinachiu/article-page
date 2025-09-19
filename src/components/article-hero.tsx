@@ -63,7 +63,7 @@ const ArticleHero = ({
           )}
 
           {/* Social Share */}
-          <SocialShare title={title} className="gap-3" />
+          <SocialShare title={title} className="gap-3 mb-0" />
         </div>
         
         {/* Sidebar */}
