@@ -35,6 +35,7 @@ const Index = () => {
         readTime="5 min read"
         tags={["日本", "神社", "御守", "文化", "旅遊"]}
       />
+      <ArticleContent />
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2">
