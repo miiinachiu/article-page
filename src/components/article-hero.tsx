@@ -27,7 +27,7 @@ const ArticleHero = ({
           {category}
         </Badge>
         
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-6 leading-tight">
           {title}
         </h1>
         
