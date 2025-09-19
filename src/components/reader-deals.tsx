@@ -9,21 +9,21 @@ const ReaderDeals = () => {
       platform: "klook",
       title: "東京神社御守購買體驗 門票",
       price: "4,000 日圓",
-      image: "/api/placeholder/120/80"
+      image: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=120&h=80&fit=crop&crop=center"
     },
     {
       id: 2,
       platform: "KKday", 
       title: "京都清水寺新型態美術館門票 御守文化體驗",
       price: "4,000 日圓",
-      image: "/api/placeholder/120/80"
+      image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=120&h=80&fit=crop&crop=center"
     },
     {
       id: 3,
       platform: "Viator",
       title: "淺草寺御守製作工作坊 半日遊",
       price: "3,500 日圓", 
-      image: "/api/placeholder/120/80"
+      image: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=120&h=80&fit=crop&crop=center"
     }
   ];
 
