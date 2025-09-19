@@ -18,7 +18,7 @@ import sensojiTemple from "@/assets/sensoji-temple.jpg";
 
 const ArticleContent = () => {
   return (
-    <div className="container mx-auto px-6 pt-0 pb-6">
+    <div className="container mx-auto px-6 py-12">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
         {/* Main Content */}
         <div className="lg:col-span-2">
@@ -424,6 +424,134 @@ const ArticleContent = () => {
           
           {/* Related Reading Section */}
           <RelatedReading />
+        </div>
+
+        {/* Sidebar */}
+        <div className="lg:col-span-1">
+          <div className="sticky top-8 space-y-8">
+            {/* Sidebar Ad */}
+            <SidebarAd />
+            
+            {/* Hot Topics */}
+            <Card className="p-6">
+              <h3 className="font-bold text-lg mb-4 text-primary">熱門話題</h3>
+              <div className="space-y-3">
+                <a href="#" className="block hover:text-primary transition-colors">
+                  <p className="font-medium text-sm">2025年春節生肖吉祥物推薦</p>
+                </a>
+                <a href="#" className="block hover:text-primary transition-colors">
+                  <p className="font-medium text-sm">日本櫻花季最佳賞花地點</p>
+                </a>
+                <a href="#" className="block hover:text-primary transition-colors">
+                  <p className="font-medium text-sm">京都神社參拜完整指南</p>
+                </a>
+                <a href="#" className="block hover:text-primary transition-colors">
+                  <p className="font-medium text-sm">東京近郊一日遊推薦</p>
+                </a>
+                <a href="#" className="block hover:text-primary transition-colors">
+                  <p className="font-medium text-sm">大阪賞楓推薦</p>
+                </a>
+              </div>
+            </Card>
+
+            {/* Related Articles */}
+            <Card className="p-6">
+              <h3 className="font-bold text-lg mb-4 text-primary">相關文章</h3>
+              <div className="space-y-4">
+                <div className="flex gap-3">
+                  <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0"></div>
+                  <div>
+                    <p className="font-medium text-sm line-clamp-2">2025出國打包行李必看：各國登機行李規範、最新行動電源攜帶限制</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0"></div>
+                  <div>
+                    <p className="font-medium text-sm line-clamp-2">2025年9月壽星生日優惠餐廳！火鍋、燒烤、吃到飽，各式餐廳生日優惠一次看</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0"></div>
+                  <div>
+                    <p className="font-medium text-sm line-clamp-2">2025社群爆紅美食推薦給你！黑衣人冰棒和奶油烤年糕超級夯</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0"></div>
+                  <div>
+                    <p className="font-medium text-sm line-clamp-2">興安夜市美食推薦！不用出國，就能吃到最道地緬甸料理！</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="w-16 h-16 bg-muted rounded-md flex-shrink-0"></div>
+                  <div>
+                    <p className="font-medium text-sm line-clamp-2">2025台北花海推薦！向日葵、圓仔花、波斯菊、菊花輪番綻放，捷運輕鬆到達</p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* Reader Deals Section */}
+            <Card className="p-6">
+              <h3 className="font-bold text-lg mb-4 text-primary">輕旅行讀者優惠</h3>
+              <div className="space-y-4">
+                <div className="border rounded-lg p-4 hover:bg-muted/50 transition-colors">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 bg-[#FF6B35] rounded-lg flex items-center justify-center">
+                        <span className="text-white font-bold text-xs">A</span>
+                      </div>
+                      <div>
+                        <p className="font-medium text-sm">Agoda 日本酒店專屬優惠</p>
+                        <p className="text-xs text-muted-foreground">高達30%折扣</p>
+                      </div>
+                    </div>
+                    <a href="#" className="text-xs bg-primary text-primary-foreground px-3 py-1 rounded-full hover:bg-primary/90 transition-colors">
+                      立即預訂
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="border rounded-lg p-4 hover:bg-muted/50 transition-colors">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 bg-[#D32F2F] rounded-lg flex items-center justify-center">
+                        <span className="text-white font-bold text-xs">H</span>
+                      </div>
+                      <div>
+                        <p className="font-medium text-sm">Hotels.com 神社周邊住宿</p>
+                        <p className="text-xs text-muted-foreground">買10晚送1晚</p>
+                      </div>
+                    </div>
+                    <a href="#" className="text-xs bg-primary text-primary-foreground px-3 py-1 rounded-full hover:bg-primary/90 transition-colors">
+                      查看優惠
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="border rounded-lg p-4 hover:bg-muted/50 transition-colors">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 bg-[#003580] rounded-lg flex items-center justify-center">
+                        <span className="text-white font-bold text-xs">B</span>
+                      </div>
+                      <div>
+                        <p className="font-medium text-sm">Booking.com 溫泉旅館</p>
+                        <p className="text-xs text-muted-foreground">限時8折優惠</p>
+                      </div>
+                    </div>
+                    <a href="#" className="text-xs bg-primary text-primary-foreground px-3 py-1 rounded-full hover:bg-primary/90 transition-colors">
+                      立即預訂
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+
+            {/* Bottom Sidebar Ad */}
+            <SidebarAd />
+          </div>
         </div>
       </div>
     </div>
